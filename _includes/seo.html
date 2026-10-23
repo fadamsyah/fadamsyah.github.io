@@ -8,7 +8,7 @@
   {% assign canonical_url = page.url | replace: "index.html", "" | prepend: site.url %}
 {% endif %}
 
-<title>{{ site.title }} - Homepage</title>
+<title>{{ site.title }} | {{ site.author.bio | strip_html }}</title>
 
 {% assign seo_description = page.description | default: page.excerpt | default: site.description %}
 {% if seo_description %}
@@ -38,8 +38,44 @@
   <meta property="og:url" content="{{ page.url | prepend: seo_url | replace: "/index.html", "/" }}">
 {% endif %}
 
-{% if page.excerpt %}
+{% if seo_description %}
+  <meta name="description" content="{{ seo_description }}">
   <meta property="og:description" content="{{ seo_description }}">
+{% endif %}
+
+{% if seo_url and site.author.avatar %}
+  <meta property="og:type" content="profile">
+  <meta property="og:image" content="{{ site.author.avatar | prepend: '/' | prepend: seo_url }}">
+  <meta name="twitter:card" content="summary">
+{% endif %}
+
+{% comment %} Structured data so search engines connect this site with the author's other profiles. {% endcomment %}
+{% if seo_url %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": {{ site.title | jsonify }},
+  "alternateName": ["Adam", "F. A. Maani"],
+  "url": {{ seo_url | append: '/' | jsonify }},
+  "image": {{ site.author.avatar | prepend: '/' | prepend: seo_url | jsonify }},
+  "description": {{ seo_description | jsonify }},
+  "jobTitle": "AI Research Engineer",
+  "worksFor": {"@type": "CollegeOrUniversity", "name": "Mohamed bin Zayed University of Artificial Intelligence (MBZUAI)", "url": "https://mbzuai.ac.ae/"},
+  "alumniOf": [
+    {"@type": "CollegeOrUniversity", "name": "Mohamed bin Zayed University of Artificial Intelligence (MBZUAI)", "url": "https://mbzuai.ac.ae/"},
+    {"@type": "CollegeOrUniversity", "name": "Institut Teknologi Bandung (ITB)", "url": "https://www.itb.ac.id/"}
+  ],
+  "address": {"@type": "PostalAddress", "addressLocality": "Abu Dhabi", "addressCountry": "AE"},
+  "email": {{ site.author.email | prepend: 'mailto:' | jsonify }},
+  "knowsAbout": ["Multimodal foundation models", "Agentic AI", "AI for healthcare", "AI for climate", "Computer vision"],
+  "sameAs": [
+    {{ site.author.googlescholar | jsonify }},
+    {{ site.author.linkedin | prepend: 'https://www.linkedin.com/in/' | jsonify }},
+    {{ site.author.github | prepend: 'https://github.com/' | jsonify }}
+  ]
+}
+</script>
 {% endif %}
 
 {% if site.twitter.username %}

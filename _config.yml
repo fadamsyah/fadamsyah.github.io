@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Fadillah Adamsyah Maani"
-description              : "AI Research Engineer at MBZUAI working on multimodal foundation models for healthcare and climate."
+description              : "Fadillah Adamsyah Maani (Adam) is an AI Research Engineer at MBZUAI working on multimodal foundation models and agentic AI for healthcare and climate."
 repository               : "fadamsyah/fadamsyah.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -15,7 +15,7 @@ google_scholar_stats_use_cdn : true
 google_analytics_id      : # get google_analytics_id from https://analytics.google.com/analytics/
 
 # SEO Related
-google_site_verification : # get google_site_verification from https://search.google.com/search-console/about
+google_site_verification : "jhj8zPKHxfuLOVVQXa37rQHjM2l_X1OvQoBH6h1vNOE"
 bing_site_verification   : # get bing_site_verification from https://www.bing.com/webmasters/about
 baidu_site_verification  : # get baidu_site_verification from https://ziyuan.baidu.com/login/index?u=/site/index
 
