@@ -1,0 +1,21 @@
+# Education, newest first. Rendered by _includes/cv-list.html.
+
+- title: M.Sc. in Computer Vision
+  org: Mohamed bin Zayed University of Artificial Intelligence (MBZUAI)
+  url: https://mbzuai.ac.ae/
+  location: Abu Dhabi, UAE
+  dates: Aug 2022 – Jun 2024
+  summary: "Supervisor: [Prof. Mohammad Yaqub](https://scholar.google.co.uk/citations?user=9dfn5GkAAAAJ) · Mentor: [Dr. Numan Saeed](https://scholar.google.com/citations?user=VMPEU20AAAAJ)"
+  highlights:
+    - "GPA 4.00/4.00, full scholarship."
+    - "Thesis: *On Enabling Video Networks for Reliable 2D+Time Echocardiography Analysis*."
+
+- title: B.Sc. in Engineering Physics
+  org: Institut Teknologi Bandung (ITB)
+  url: https://www.itb.ac.id/
+  location: Bandung, Indonesia
+  dates: Aug 2016 – Sep 2020
+  summary: "Supervisor: [Prof. Yul Yunazwin Nazaruddin](https://scholar.google.com/citations?user=Rve3vEYAAAAJ)"
+  highlights:
+    - "GPA 3.96/4.00, cum laude."
+    - "Thesis: *Implementation of Longitudinal and Lateral Control on Autonomous Vehicle*."

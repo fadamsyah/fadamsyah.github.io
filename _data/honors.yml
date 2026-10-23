@@ -1,0 +1,40 @@
+# Honors and awards, newest first. Rendered by _includes/cv-list.html (variant "compact").
+# icon: Font Awesome 5 solid icon name (award = awards, medal = challenge placements, graduation-cap = scholarships).
+
+- title: Impactful Research Award
+  org: MBZUAI
+  dates: Feb 2026
+  icon: award
+  summary: "For [FetalCLIP](https://doi.org/10.1038/s41746-026-02907-9)."
+
+- title: Best Paper and Best Young Scientist Paper award nominations
+  org: MICCAI 2024
+  dates: Oct 2024
+  icon: award
+  summary: "For [CoReEcho](https://doi.org/10.1007/978-3-031-72083-3_55), also presented as an oral."
+
+- title: 3rd place, BraTS 2024 Pediatrics & Sub-Saharan Africa
+  org: MICCAI 2024
+  dates: Oct 2024
+  icon: medal
+
+- title: 2nd place, BraTS 2024 GoAT challenge
+  org: ISBI 2024
+  dates: May 2024
+  icon: medal
+
+- title: 3rd place, BraTS 2023 Adult Glioma
+  org: MICCAI 2023
+  dates: Oct 2023
+  icon: medal
+
+- title: Full scholarship, M.Sc. in Computer Vision
+  org: MBZUAI
+  dates: "2022"
+  icon: graduation-cap
+
+- title: Beasiswa Unggulan
+  org: Indonesian Ministry of Education and Culture
+  dates: "2017"
+  icon: graduation-cap
+  summary: "Merit-based full scholarship."

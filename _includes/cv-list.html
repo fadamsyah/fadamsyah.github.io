@@ -1,0 +1,28 @@
+{%- comment -%}
+  Timeline list for Experience, Honors and Education.
+  usage: {% include cv-list.html items=site.data.experience.research %}
+         {% include cv-list.html items=site.data.honors variant="compact" %}
+{%- endcomment -%}
+<div class="cv-list{% if include.variant %} cv-list--{{ include.variant }}{% endif %}">
+{%- for e in include.items %}
+  <div class="cv-item">
+    <div class="cv-dates">{{ e.dates }}</div>
+    <div class="cv-body">
+      <div class="cv-title">{% if e.icon %}<i class="fas fa-{{ e.icon }} cv-icon" aria-hidden="true"></i>{% endif %}{{ e.title }}</div>
+      {%- if e.org %}
+      <div class="cv-org">{% if e.url %}<a href="{{ e.url }}">{{ e.org }}</a>{% else %}{{ e.org }}{% endif %}{% if e.location %}<span class="cv-sep" aria-hidden="true">·</span><span class="cv-loc">{{ e.location }}</span>{% endif %}</div>
+      {%- endif %}
+      {%- if e.summary %}
+      <div class="cv-summary">{{ e.summary | markdownify | remove: '<p>' | remove: '</p>' | strip }}</div>
+      {%- endif %}
+      {%- if e.highlights %}
+      <ul class="cv-points">
+        {%- for h in e.highlights %}
+        <li>{{ h | markdownify | remove: '<p>' | remove: '</p>' | strip }}</li>
+        {%- endfor %}
+      </ul>
+      {%- endif %}
+    </div>
+  </div>
+{%- endfor %}
+</div>

@@ -107,3 +107,168 @@ h1:before, .anchor:before {
     background-color: #00369f;
     font-size: .8em;
 }
+
+/* Site customizations: section icons, citations line, news list, timeline lists */
+$accent: #224b8d;
+$muted: #6b7280;
+$hairline: #eceef2;
+$timeline: #dfe5ee;
+
+.page__content h1 > .fas,
+.page__content h3 > .fas {
+    color: $accent;
+    width: 1.3em;
+    margin-right: .3em;
+    text-align: center;
+    font-size: .85em;
+}
+
+.gs-cites { margin-top: .5em; }
+.gs-cites[hidden] { display: none; }
+.gs-cites a {
+    display: inline-block;
+    padding: .2em .8em;
+    border: 1px solid #d5dbe6;
+    border-radius: 999px;
+    font-size: .85em;
+    text-decoration: none;
+}
+.gs-cites .ai { margin-right: .3em; }
+
+.eq { cursor: help; }
+
+/* News: filter buttons and tagged items */
+.news-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .4em;
+    margin: 0 0 .75em;
+}
+.news-filter {
+    font-family: inherit;
+    font-size: .75em;
+    line-height: 1.4;
+    padding: .25em .8em;
+    border: 1px solid #d5dbe6;
+    border-radius: 999px;
+    background: #fff;
+    color: #444;
+    cursor: pointer;
+}
+.news-filter:hover { border-color: $accent; }
+.news-filter:focus-visible { outline: 2px solid $accent; outline-offset: 2px; }
+.news-count { opacity: .65; margin-left: .15em; }
+.news-filter.is-active { background: $accent; border-color: $accent; color: #fff; }
+.news-filter.is-active .news-count { opacity: .85; }
+
+.news-items {
+    list-style: none;
+    margin: 0;
+    padding: 0 .5em 0 0;
+    max-height: 24em;
+    overflow-y: auto;
+    border-top: 1px solid $hairline;
+}
+.news-item {
+    display: grid;
+    grid-template-columns: 5.4em 7.4em 1fr;
+    column-gap: .75em;
+    align-items: baseline;
+    margin: 0;
+    padding: .5em 0;
+    border-bottom: 1px solid $hairline;
+}
+.news-item[hidden] { display: none; }
+.news-date { color: $muted; font-size: .85em; white-space: nowrap; }
+.news-tag {
+    justify-self: start;
+    font-size: .68em;
+    font-weight: bold;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    padding: .2em .65em;
+    border-radius: 999px;
+    white-space: nowrap;
+}
+.news-text { font-size: .95em; }
+
+// type: (tag background, tag text / active filter background)
+$news-types: (
+    paper: (#e8f0fe, #1a4d8f),
+    preprint: (#efecfd, #4b3fa8),
+    award: (#fff3d6, #8a5300),
+    challenge: (#fde9e3, #a8361b),
+    career: (#e4f4e9, #1d6b3a),
+    education: (#e2f2f6, #155e75)
+);
+@each $type, $colors in $news-types {
+    .news-tag--#{$type} { background: nth($colors, 1); color: nth($colors, 2); }
+    .news-filter--#{$type}:before {
+        content: '';
+        display: inline-block;
+        width: .6em;
+        height: .6em;
+        margin-right: .4em;
+        border-radius: 50%;
+        background: nth($colors, 2);
+    }
+    .news-filter--#{$type}.is-active { background: nth($colors, 2); border-color: nth($colors, 2); }
+}
+.news-filter.is-active:before { background: #fff; }
+
+@media (max-width: 600px) {
+    .news-item { grid-template-columns: auto 1fr; row-gap: .25em; }
+    .news-text { grid-column: 1 / -1; }
+}
+
+/* Timeline lists: Experience, Honors (compact variant), Education */
+.cv-list { margin: .5em 0 1.5em; }
+.cv-item {
+    display: grid;
+    grid-template-columns: 8.5em 1fr;
+    column-gap: 1.25em;
+}
+.cv-dates {
+    color: $muted;
+    font-size: .85em;
+    padding-top: .15em;
+    text-align: right;
+    white-space: nowrap;
+}
+.cv-body {
+    position: relative;
+    padding: 0 0 1.25em 1.25em;
+    border-left: 2px solid $timeline;
+}
+.cv-item:last-child .cv-body { padding-bottom: .25em; }
+.cv-body:before {
+    content: '';
+    position: absolute;
+    left: -7px;
+    top: .3em;
+    width: 12px;
+    height: 12px;
+    box-sizing: border-box;
+    border: 2px solid $accent;
+    border-radius: 50%;
+    background: #fff;
+}
+.cv-title { font-weight: bold; color: #2d2d2d; line-height: 1.35; }
+.cv-org { font-size: .9em; margin-top: .1em; }
+.cv-sep { color: #b8bec8; margin: 0 .45em; }
+.cv-loc { color: $muted; }
+.cv-summary { font-size: .9em; margin-top: .35em; }
+.cv-points { margin: .3em 0 0; padding-left: 1.1em; }
+.cv-points li { font-size: .9em; margin-bottom: .15em; }
+
+.cv-icon { color: $accent; width: 1.2em; margin-right: .45em; text-align: center; }
+.cv-list--compact .cv-body { border-left: 0; padding: 0 0 .9em 0; }
+.cv-list--compact .cv-body:before { display: none; }
+.cv-list--compact .cv-org,
+.cv-list--compact .cv-summary { margin-left: 1.65em; }
+
+@media (max-width: 600px) {
+    .cv-item { grid-template-columns: 1fr; }
+    .cv-dates { text-align: left; padding: 0 0 .2em 1.4em; border-left: 2px solid $timeline; }
+    .cv-list--compact .cv-dates { padding-left: 0; border-left: 0; }
+}

@@ -8,51 +8,140 @@ redirect_from:
   - /about.html
 ---
 
-{% if site.google_scholar_stats_use_cdn %}
-{% assign gsDataBaseUrl = "https://cdn.jsdelivr.net/gh/" | append: site.repository | append: "@" %}
-{% else %}
-{% assign gsDataBaseUrl = "https://raw.githubusercontent.com/" | append: site.repository | append: "/" %}
-{% endif %}
-{% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
+# <i class="fas fa-user" aria-hidden="true"></i>About Me {#about-me}
 
-<span class='anchor' id='about-me'></span>
+I am an AI Research Engineer at [MBZUAI](https://mbzuai.ac.ae/), working with [Prof. Salman Khan](https://salman-h-khan.github.io/) on multimodal foundation models and agentic AI for climate analysis ([Climate Co-Pilot](https://mbzuai-oryx.github.io/ClimateCoPilot/)). Previously, I was with the BioMedIA Lab at MBZUAI under [Prof. Mohammad Yaqub](https://scholar.google.co.uk/citations?user=9dfn5GkAAAAJ), first as an M.Sc. student in Computer Vision and then as a Graduate Research Assistant. My work there covered echocardiography, fetal ultrasound, and brain tumor segmentation, including [FetalCLIP](https://biomedia-mbzuai.github.io/FetalCLIP/), a vision-language foundation model for fetal ultrasound.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. Suspendisse condimentum, libero vel tempus mattis, risus risus vulputate libero, elementum fermentum mi neque vel nisl. Maecenas facilisis maximus dignissim. Curabitur mattis vulputate dui, tincidunt varius libero luctus eu. Mauris mauris nulla, scelerisque eget massa id, tincidunt congue felis. Sed convallis tempor ipsum rhoncus viverra. Pellentesque nulla orci, accumsan volutpat fringilla vitae, maximus sit amet tortor. Aliquam ultricies odio ut volutpat scelerisque. Donec nisl nisl, porttitor vitae pharetra quis, fringilla sed mi. Fusce pretium dolor ut aliquam consequat. Cras volutpat, tellus accumsan mattis molestie, nisl lacus tempus massa, nec malesuada tortor leo vel quam. Aliquam vel ex consectetur, vehicula leo nec, efficitur eros. Donec convallis non urna quis feugiat.
+In 2025, I worked as a Senior Data Scientist at [Miral Experiences](https://miral.ae/miralexperiences/) in Abu Dhabi, transforming park data into business insights and recommendations, from personalized recommendations for visitors across four parks and price recommendation systems for retail and F&B to advanced ad hoc analytics for business leaders. Across research and industry, I enjoy taking a problem from careful data curation through modeling to a solution that people can use and build upon.
 
-My research interest includes neural machine translation and computer vision. I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>).
+I am always happy to hear from researchers and teams working on related problems, so please feel free to reach out by [email](mailto:fadillahadam11@gmail.com). To give my current commitments the focus they deserve, I am unfortunately not able to take on any part-time roles at the moment.
+
+**Research interests:** multimodal models, foundation models, agentic AI, AI for healthcare, AI for climate, and applied AI & ML.
+
+<p class="gs-cites" id="gs-cites" hidden><a href="https://scholar.google.com/citations?user=W-4975wAAAAJ"><i class="ai ai-google-scholar" aria-hidden="true"></i> Google Scholar citations: <strong id="total_cit"></strong></a></p>
 
 
-# 🔥 News
-- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+# <i class="fas fa-newspaper" aria-hidden="true"></i>News {#news}
 
-# 📝 Publications 
+{% include news.html %}
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+
+# <i class="fas fa-book-open" aria-hidden="true"></i>Selected Publications {#selected-publications}
+
+The full list of publications is available on [Google Scholar](https://scholar.google.com/citations?user=W-4975wAAAAJ).
+
+<!--
+  Per-paper citation counts are filled in from the Google Scholar crawler data.
+  data='...' is the paper's Scholar ID: the value after "citation_for_view=" on its Scholar page.
+-->
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">npj Digit. Med. 2026</div><img src='images/teasers/fetalclip.png' alt="FetalCLIP dataset curation and pretraining overview" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Deep Residual Learning for Image Recognition](https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf)
+[FetalCLIP: A Visual-Language Foundation Model for Fetal Ultrasound Image Analysis](https://doi.org/10.1038/s41746-026-02907-9)
 
-**Kaiming He**, Xiangyu Zhang, Shaoqing Ren, Jian Sun
+**F. A. Maani**<span class="eq" title="Equal contribution">*</span>, N. Saeed<span class="eq" title="Equal contribution">*</span>, T. Saleem, Z. Farooq, H. Alasmawi, W. Diehl, A. Mohammad, G. Waring, S. Valappil, L. Bricker, M. Yaqub
 
-[**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+*npj Digital Medicine*, 2026
+
+[**Paper**](https://doi.org/10.1038/s41746-026-02907-9) \| [**Project**](https://biomedia-mbzuai.github.io/FetalCLIP/) \| [**Code**](https://github.com/biomedia-mbzuai/fetalclip) <strong><span class='show_paper_citations' data='W-4975wAAAAJ:UebtZRa9Y70C'></span></strong>
+
+- A vision-language foundation model for fetal ultrasound, pretrained on over 210K image–caption pairs and evaluated on plane classification, gestational age estimation, congenital heart defect detection, and segmentation.
 </div>
 </div>
 
-- [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv 2026</div><img src='images/teasers/earthalign.png' alt="EarthAlign dataset overview" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
 
-# 🎖 Honors and Awards
-- *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.09* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+[EarthAlign: Learning Language-Aligned Representations of Earth System Data](https://arxiv.org/abs/2610.14624)
 
-# 📖 Educations
-- *2019.06 - 2022.04 (now)*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2015.09 - 2019.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+**F. A. Maani**, N. Saeed, J. Ma, D. T. Nguyen, Y. Wehbe, D. Watson-Parris, S. Khan
 
-# 💬 Invited Talks
-- *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/)
+*arXiv preprint*, 2026
 
-# 💻 Internships
-- *2019.05 - 2020.02*, [Lorem](https://github.com/), China.
+[**arXiv**](https://arxiv.org/abs/2610.14624) \| [**Project**](https://mbzuai-oryx.github.io/EarthAlign/) \| [**Code**](https://github.com/mbzuai-oryx/EarthAlign) \| [**Dataset & Weights**](https://huggingface.co/datasets/MBZUAI/EarthAlign) <strong><span class='show_paper_citations' data='W-4975wAAAAJ:4TOpqqG69KYC'></span></strong>
+
+- A 553K-sample dataset pairing natural-event and normal-weather records with ERA5 meteorological data and grounded captions, plus MeteoLIP, a dual-encoder model for meteorology–language alignment.
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">arXiv 2026</div><img src='images/teasers/dark.png' alt="DARK framework overview" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[DARK: Diagonal-Anchored Repulsive Knowledge Distillation for Vision-Language Models under Extreme Compression](https://arxiv.org/abs/2603.05421)
+
+N. Saeed, A. Hanif, **F. A. Maani**, H. Alasmawi, M. Yaqub
+
+*arXiv preprint*, 2026
+
+[**arXiv**](https://arxiv.org/abs/2603.05421) \| [**Project**](https://www.numansaeed.com/dark/) \| [**Code**](https://github.com/numanai/MobileFetalCLIP) <strong><span class='show_paper_citations' data='W-4975wAAAAJ:Zph67rFs4hoC'></span></strong>
+
+- A contrastive distillation method that compresses FetalCLIP into MobileFetalCLIP, with a 26× smaller visual encoder that runs in 1.6 ms on an iPhone 16 Pro while matching or exceeding its teacher on zero-shot benchmarks.
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">MICCAI 2024 (Oral)</div><img src='images/teasers/coreecho.png' alt="CoReEcho embedding comparison" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[CoReEcho: Continuous Representation Learning for 2D+time Echocardiography Analysis](https://doi.org/10.1007/978-3-031-72083-3_55)
+
+**F. A. Maani**, N. Saeed, A. Matsun, M. Yaqub
+
+*Medical Image Computing and Computer Assisted Intervention (MICCAI)*, 2024
+
+[**Paper**](https://papers.miccai.org/miccai-2024/paper/2916_paper.pdf) \| [**Code**](https://github.com/BioMedIA-MBZUAI/CoReEcho) <strong><span class='show_paper_citations' data='W-4975wAAAAJ:Y0pCki6q_DkC'></span></strong>
+
+- A training framework that learns continuous representations for direct ejection fraction regression, reaching state-of-the-art results on EchoNet-Dynamic and transferring better to smaller echocardiography datasets.
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">UMB 2024</div><img src='images/teasers/simlvseg.png' alt="SimLVSeg method illustration" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[SimLVSeg: Simplifying Left Ventricular Segmentation in 2-D+Time Echocardiograms with Self- and Weakly Supervised Learning](https://doi.org/10.1016/j.ultrasmedbio.2024.08.023)
+
+**F. A. Maani**, A. Ukaye, N. Saadi, N. Saeed, M. Yaqub
+
+*Ultrasound in Medicine & Biology*, 2024
+
+[**Paper**](https://doi.org/10.1016/j.ultrasmedbio.2024.08.023) \| [**Code**](https://github.com/BioMedIA-MBZUAI/SimLVSeg) <strong><span class='show_paper_citations' data='W-4975wAAAAJ:ufrVoPGSRksC'></span></strong>
+
+- Self-supervised temporal masking followed by weakly supervised training lets video networks segment the left ventricle from sparsely annotated echocardiograms, reaching 93.32% Dice on EchoNet-Dynamic.
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">BrainLes 2023</div><img src='images/teasers/brats2023.png' alt="BraTS 2023 qualitative segmentation results" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Advanced Tumor Segmentation in Medical Imaging: An Ensemble Approach for BraTS 2023 Adult Glioma and Pediatric Tumor Tasks](https://arxiv.org/abs/2403.09262)
+
+**F. A. Maani**<span class="eq" title="Equal contribution">*</span>, A. U. R. Hashmi<span class="eq" title="Equal contribution">*</span>, M. Aljuboory, N. Saeed, I. Sobirov, M. Yaqub
+
+*BrainLes Workshop @ MICCAI*, 2023
+
+[**arXiv**](https://arxiv.org/abs/2403.09262) <strong><span class='show_paper_citations' data='W-4975wAAAAJ:IjCSPb-OGe4C'></span></strong>
+
+- An ensemble of SegResNet and MedNeXt with lesion-wise post-processing, placing 3rd in the BraTS 2023 Adult Glioma challenge.
+</div>
+</div>
+
+
+# <i class="fas fa-briefcase" aria-hidden="true"></i>Experience {#experience}
+
+### <i class="fas fa-flask" aria-hidden="true"></i>Research {#experience-research}
+
+{% include cv-list.html items=site.data.experience.research %}
+
+### <i class="fas fa-building" aria-hidden="true"></i>Industry {#experience-industry}
+
+{% include cv-list.html items=site.data.experience.industry %}
+
+
+# <i class="fas fa-trophy" aria-hidden="true"></i>Honors and Awards {#honors-and-awards}
+
+{% include cv-list.html items=site.data.honors variant="compact" %}
+
+
+# <i class="fas fa-graduation-cap" aria-hidden="true"></i>Education {#education}
+
+{% include cv-list.html items=site.data.education %}

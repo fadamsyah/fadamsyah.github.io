@@ -1,0 +1,87 @@
+# News, newest first. Rendered by _includes/news.html.
+# type: paper | preprint | award | challenge | career | education
+# text: Markdown, following the conventions in CLAUDE.local.md.
+
+- date: Oct 2026
+  type: preprint
+  text: "New preprint: [EarthAlign](https://arxiv.org/abs/2610.14624), with the dataset, code, and model weights publicly released."
+
+- date: Jun 2026
+  type: paper
+  text: "1 paper published in **npj Digital Medicine**: [FetalCLIP](https://doi.org/10.1038/s41746-026-02907-9)."
+
+- date: Jun 2026
+  type: preprint
+  text: "New preprint: [TerraBench](https://arxiv.org/abs/2606.13148)."
+
+- date: Mar 2026
+  type: preprint
+  text: "New preprint: [DARK](https://arxiv.org/abs/2603.05421)."
+
+- date: Feb 2026
+  type: award
+  text: "Received the **Impactful Research Award** for FetalCLIP at MBZUAI."
+
+- date: Feb 2026
+  type: career
+  text: "Joined MBZUAI as an AI Research Engineer, working with Prof. Salman Khan."
+
+- date: Nov 2025
+  type: paper
+  text: "1 paper accepted at **WACV 2026**: [DuPLUS](https://ieeexplore.ieee.org/document/11492698/)."
+
+- date: Apr 2025
+  type: career
+  text: "Joined Miral Experiences, Abu Dhabi, as a Senior Data Scientist."
+
+- date: Feb 2025
+  type: paper
+  text: "1 paper accepted at **CVPR 2025** (Highlight): [All Languages Matter (ALM-Bench)](https://openaccess.thecvf.com/content/CVPR2025/html/Vayani_All_Languages_Matter_Evaluating_LMMs_on_Culturally_Diverse_100_Languages_CVPR_2025_paper.html)."
+
+- date: Oct 2024
+  type: award
+  text: "[CoReEcho](https://doi.org/10.1007/978-3-031-72083-3_55) presented as an **oral** at MICCAI 2024 and nominated for the Best Paper and Best Young Scientist Paper awards."
+
+- date: Oct 2024
+  type: challenge
+  text: "**3rd place** in BraTS 2024 Pediatrics & Sub-Saharan Africa at MICCAI 2024: [Optimizing Brain Tumor Segmentation with MedNeXt](https://arxiv.org/abs/2411.15872)."
+
+- date: Oct 2024
+  type: paper
+  text: "1 paper accepted at **WACV 2025**: [ConDiSR](https://openaccess.thecvf.com/content/WACV2025/html/Matsun_ConDiSR_Contrastive_Disentanglement_and_Style_Regularization_for_Single_Domain_Generalizatio_WACV_2025_paper.html)."
+
+- date: Sep 2024
+  type: paper
+  text: "1 paper published in **Ultrasound in Medicine & Biology**: [SimLVSeg](https://doi.org/10.1016/j.ultrasmedbio.2024.08.023)."
+
+- date: Jun 2024
+  type: career
+  text: "Joined the BioMedIA Lab at MBZUAI as a Graduate Research Assistant."
+
+- date: Jun 2024
+  type: education
+  text: "Graduated with an M.Sc. in Computer Vision from MBZUAI (GPA 4.00/4.00)."
+
+- date: May 2024
+  type: paper
+  text: "2 papers accepted at **MICCAI 2024**: [CoReEcho](https://papers.miccai.org/miccai-2024/paper/2916_paper.pdf) and [SurvRNC](https://papers.miccai.org/miccai-2024/paper/3191_paper.pdf)."
+
+- date: May 2024
+  type: challenge
+  text: "**2nd place** in the BraTS 2024 GoAT challenge at ISBI 2024: [On Enhancing Brain Tumor Segmentation Across Diverse Populations with Convolutional Neural Networks](https://ieeexplore.ieee.org/abstract/document/10635463/)."
+
+- date: Oct 2023
+  type: challenge
+  text: "**3rd place** in BraTS 2023 Adult Glioma at MICCAI 2023: [Advanced Tumor Segmentation in Medical Imaging](https://arxiv.org/abs/2403.09262)."
+
+- date: Oct 2023
+  type: paper
+  text: "1 paper published at **MLMI 2023**: [Exploring the Transfer Learning Capabilities of CLIP in Domain Generalization for Diabetic Retinopathy](https://arxiv.org/abs/2308.14212)."
+
+- date: May 2023
+  type: career
+  text: "Started a graduate internship at LabibAI, Abu Dhabi."
+
+- date: Aug 2022
+  type: education
+  text: "Joined MBZUAI for an M.Sc. in Computer Vision on a full scholarship."

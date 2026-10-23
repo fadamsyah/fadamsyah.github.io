@@ -1,0 +1,52 @@
+{%- comment -%}
+  News list with category tags and filter buttons. Data: _data/news.yml.
+  The three lists below must stay in the same order.
+{%- endcomment -%}
+{%- assign types = "paper,preprint,award,challenge,career,education" | split: "," -%}
+{%- assign labels = "Publication,Preprint,Award,Challenge,Career,Education" | split: "," -%}
+{%- assign filters = "Publications,Preprints,Awards,Challenges,Career,Education" | split: "," -%}
+<div class="news" id="news-list">
+  <div class="news-filters" role="group" aria-label="Filter news by type">
+    <button type="button" class="news-filter is-active" data-filter="all" aria-pressed="true">All <span class="news-count">{{ site.data.news | size }}</span></button>
+    {%- for t in types %}
+    {%- assign n = site.data.news | where: "type", t | size %}
+    {%- if n > 0 %}
+    <button type="button" class="news-filter news-filter--{{ t }}" data-filter="{{ t }}" aria-pressed="false">{{ filters[forloop.index0] }} <span class="news-count">{{ n }}</span></button>
+    {%- endif %}
+    {%- endfor %}
+  </div>
+  <ul class="news-items">
+    {%- for item in site.data.news %}
+    {%- assign label = item.type %}
+    {%- for t in types %}{% if t == item.type %}{% assign label = labels[forloop.index0] %}{% endif %}{% endfor %}
+    <li class="news-item" data-type="{{ item.type }}">
+      <span class="news-date">{{ item.date }}</span>
+      <span class="news-tag news-tag--{{ item.type }}">{{ label }}</span>
+      <span class="news-text">{{ item.text | markdownify | remove: '<p>' | remove: '</p>' | strip }}</span>
+    </li>
+    {%- endfor %}
+  </ul>
+</div>
+<script>
+  (function () {
+    var news = document.getElementById('news-list');
+    if (!news) { return; }
+    var list = news.querySelector('.news-items');
+    var buttons = news.querySelectorAll('.news-filter');
+    var items = news.querySelectorAll('.news-item');
+    Array.prototype.forEach.call(buttons, function (button) {
+      button.addEventListener('click', function () {
+        var filter = button.getAttribute('data-filter');
+        Array.prototype.forEach.call(buttons, function (b) {
+          var active = b === button;
+          b.classList.toggle('is-active', active);
+          b.setAttribute('aria-pressed', active ? 'true' : 'false');
+        });
+        Array.prototype.forEach.call(items, function (item) {
+          item.hidden = filter !== 'all' && item.getAttribute('data-type') !== filter;
+        });
+        list.scrollTop = 0;
+      });
+    });
+  })();
+</script>

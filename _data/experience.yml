@@ -1,0 +1,80 @@
+# Experience, newest first within each group. Rendered by _includes/cv-list.html.
+# Fields: title, org, url (optional), location, dates, summary (optional), highlights (optional list).
+# summary and highlights are Markdown.
+
+research:
+  - title: Research Engineer
+    org: MBZUAI
+    url: https://mbzuai.ac.ae/
+    location: Abu Dhabi, UAE
+    dates: Feb 2026 – Present
+    summary: "Climate AI research with [Prof. Salman Khan](https://salman-h-khan.github.io/)."
+    highlights:
+      - "Working on [Climate Co-Pilot](https://mbzuai-oryx.github.io/ClimateCoPilot/), which brings multimodal foundation models and agentic AI to climate analysis."
+      - "Released [EarthAlign](https://mbzuai-oryx.github.io/EarthAlign/), a 553K-sample dataset and models for aligning Earth system data with language."
+
+  - title: Graduate Research Assistant
+    org: BioMedIA Lab, MBZUAI
+    location: Abu Dhabi, UAE
+    dates: Jun 2024 – Mar 2025
+    summary: "Medical imaging research with [Prof. Mohammad Yaqub](https://scholar.google.co.uk/citations?user=9dfn5GkAAAAJ)."
+    highlights:
+      - "Developed [FetalCLIP](https://biomedia-mbzuai.github.io/FetalCLIP/), a vision-language foundation model for fetal ultrasound."
+      - "Contributed to medical image segmentation research."
+      - "Mentored a team that achieved 3rd place in BraTS 2024 Pediatrics & Sub-Saharan Africa at MICCAI 2024 ([paper](https://arxiv.org/abs/2411.15872))."
+
+  - title: Graduate Student Researcher
+    org: BioMedIA Lab, MBZUAI
+    location: Abu Dhabi, UAE
+    dates: Aug 2022 – Jun 2024
+    highlights:
+      - "Echocardiography analysis: [SimLVSeg](https://doi.org/10.1016/j.ultrasmedbio.2024.08.023) for left ventricle segmentation and [CoReEcho](https://doi.org/10.1007/978-3-031-72083-3_55) for ejection fraction regression."
+      - "Brain tumor segmentation challenges: 3rd place at BraTS 2023 Adult Glioma and 2nd place at BraTS 2024 GoAT."
+
+  - title: Undergraduate Researcher
+    org: Instrumentation, Control, and Decision Systems Lab, ITB
+    location: Bandung, Indonesia
+    dates: Aug 2019 – Sep 2020
+    highlights:
+      - "Developed state estimation for an autonomous vehicle, including localization with a virtual sensing system and when GNSS information is missing."
+      - "Developed longitudinal and lateral control, from CARLA simulation to deployment on a real golf cart."
+
+industry:
+  - title: Senior Data Scientist
+    org: Miral Experiences
+    url: https://miral.ae/miralexperiences/
+    location: Abu Dhabi, UAE
+    dates: Apr 2025 – Dec 2025
+    summary: "Transformed park data into business insights and recommendations."
+    highlights:
+      - "Built a personalized next-action recommender for visitors across four parks, and price recommendation systems for retail and F&B."
+      - "Delivered advanced ad hoc analytics for requests from business leaders."
+      - "Tools: Databricks, Snowflake, and Power BI."
+
+  - title: Graduate Intern
+    org: LabibAI
+    location: Abu Dhabi, UAE
+    dates: May 2023 – Jun 2023
+    highlights:
+      - "Built TAMM-GPT, a pilot chatbot that answers questions about UAE government services."
+
+  - title: Machine Vision Engineer
+    org: Freelance
+    location: Remote, Indonesia
+    dates: Jul 2021 – Jul 2022
+    highlights:
+      - "Developed an inspection system for presence detection, object counting, and barcode and data-matrix reading, implemented at Toyota Motor Manufacturing Indonesia (TMMIN)."
+
+  - title: AI Engineer
+    org: Neurabot
+    location: Remote, Indonesia
+    dates: Feb 2021 – Apr 2022
+    highlights:
+      - "Tumor segmentation in whole-slide images and Fasciola egg detection in microscopic images."
+
+  - title: Undergraduate Internship
+    org: Toyota Motor Manufacturing Indonesia (TMMIN)
+    location: Jakarta, Indonesia
+    dates: Jun 2019 – Aug 2019
+    highlights:
+      - "Developed a low-cost, internet-based automation system using Arduino for the Press & Welding Production Department."
