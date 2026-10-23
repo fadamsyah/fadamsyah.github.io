@@ -2,12 +2,18 @@
   Timeline list for Experience, Honors and Education.
   usage: {% include cv-list.html items=site.data.experience.research %}
          {% include cv-list.html items=site.data.honors variant="compact" %}
+  An entry's `logo` (image path) or `logo_icon` (Font Awesome name) sits on the timeline line.
 {%- endcomment -%}
 <div class="cv-list{% if include.variant %} cv-list--{{ include.variant }}{% endif %}">
 {%- for e in include.items %}
   <div class="cv-item">
     <div class="cv-dates">{{ e.dates }}</div>
-    <div class="cv-body">
+    <div class="cv-body{% if e.logo or e.logo_icon %} cv-body--logo{% endif %}">
+      {%- if e.logo %}
+      <img class="cv-logo" src="{{ e.logo }}" alt="" width="44" height="44" loading="lazy">
+      {%- elsif e.logo_icon %}
+      <span class="cv-logo cv-logo--icon" aria-hidden="true"><i class="fas fa-{{ e.logo_icon }}"></i></span>
+      {%- endif %}
       <div class="cv-title">{% if e.icon %}<i class="fas fa-{{ e.icon }} cv-icon" aria-hidden="true"></i>{% endif %}{{ e.title }}</div>
       {%- if e.org %}
       <div class="cv-org">{% if e.url %}<a href="{{ e.url }}">{{ e.org }}</a>{% else %}{{ e.org }}{% endif %}{% if e.location %}<span class="cv-sep" aria-hidden="true">·</span><span class="cv-loc">{{ e.location }}</span>{% endif %}</div>

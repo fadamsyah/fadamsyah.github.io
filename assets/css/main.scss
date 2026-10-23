@@ -261,6 +261,31 @@ $news-types: (
 .cv-points { margin: .3em 0 0; padding-left: 1.1em; }
 .cv-points li { font-size: .9em; margin-bottom: .15em; }
 
+/* Organization logos sit on the timeline line in place of the dot */
+.cv-list:not(.cv-list--compact) .cv-item { column-gap: 2.25em; }
+.cv-body--logo { padding-left: 36px; min-height: 52px; }
+.cv-body--logo:before { display: none; }
+.cv-logo {
+    position: absolute;
+    left: -23px;
+    top: -2px;
+    width: 44px;
+    height: 44px;
+    box-sizing: border-box;
+    padding: 2px;
+    border: 1px solid $timeline;
+    border-radius: 8px;
+    background: #fff;
+    object-fit: contain;
+}
+.cv-logo--icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $accent;
+    font-size: 18px;
+}
+
 .cv-icon { color: $accent; width: 1.2em; margin-right: .45em; text-align: center; }
 .cv-list--compact .cv-body { border-left: 0; padding: 0 0 .9em 0; }
 .cv-list--compact .cv-body:before { display: none; }
@@ -269,6 +294,7 @@ $news-types: (
 
 @media (max-width: 600px) {
     .cv-item { grid-template-columns: 1fr; }
-    .cv-dates { text-align: left; padding: 0 0 .2em 1.4em; border-left: 2px solid $timeline; }
+    .cv-list:not(.cv-list--compact) { margin-left: 22px; }
+    .cv-dates { text-align: left; padding: 0 0 .4em 36px; border-left: 2px solid $timeline; }
     .cv-list--compact .cv-dates { padding-left: 0; border-left: 0; }
 }

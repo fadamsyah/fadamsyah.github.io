@@ -1,30 +1,33 @@
 # Experience, newest first within each group. Rendered by _includes/cv-list.html.
-# Fields: title, org, url (optional), location, dates, summary (optional), highlights (optional list).
+# Fields: title, org, url (optional), logo or logo_icon (optional), location, dates, summary (optional), highlights (optional list).
 # summary and highlights are Markdown.
 
 research:
   - title: Research Engineer
     org: MBZUAI
+    logo: images/logos/mbzuai.svg
     url: https://mbzuai.ac.ae/
     location: Abu Dhabi, UAE
     dates: Feb 2026 – Present
     summary: "Climate AI research with [Prof. Salman Khan](https://salman-h-khan.github.io/)."
     highlights:
-      - "Working on [Climate Co-Pilot](https://mbzuai-oryx.github.io/ClimateCoPilot/), which brings multimodal foundation models and agentic AI to climate analysis."
+      - "Working on [Climate Co-Pilot](https://mbzuai-oryx.github.io/ClimateCoPilot/), which brings multimodal foundation models and agentic AI to climate analysis; a collaboration with [ADIA Lab](https://www.adialab.ae/) and [UC San Diego](https://ucsd.edu/), funded by ADIA Lab."
       - "Released [EarthAlign](https://mbzuai-oryx.github.io/EarthAlign/), a 553K-sample dataset and models for aligning Earth system data with language."
 
   - title: Graduate Research Assistant
     org: BioMedIA Lab, MBZUAI
+    logo: images/logos/mbzuai.svg
     location: Abu Dhabi, UAE
     dates: Jun 2024 – Mar 2025
     summary: "Medical imaging research with [Prof. Mohammad Yaqub](https://scholar.google.co.uk/citations?user=9dfn5GkAAAAJ)."
     highlights:
-      - "Developed [FetalCLIP](https://biomedia-mbzuai.github.io/FetalCLIP/), a vision-language foundation model for fetal ultrasound."
+      - "Developed [FetalCLIP](https://biomedia-mbzuai.github.io/FetalCLIP/), a vision-language foundation model for fetal ultrasound; a collaboration with [Corniche Hospital](https://corniche.seha.ae/) in Abu Dhabi, partially funded by [GE HealthCare](https://www.gehealthcare.com/)."
       - "Contributed to medical image segmentation research."
       - "Mentored a team that achieved 3rd place in BraTS 2024 Pediatrics & Sub-Saharan Africa at MICCAI 2024 ([paper](https://arxiv.org/abs/2411.15872))."
 
   - title: Graduate Student Researcher
     org: BioMedIA Lab, MBZUAI
+    logo: images/logos/mbzuai.svg
     location: Abu Dhabi, UAE
     dates: Aug 2022 – Jun 2024
     highlights:
@@ -33,6 +36,7 @@ research:
 
   - title: Undergraduate Researcher
     org: Instrumentation, Control, and Decision Systems Lab, ITB
+    logo: images/logos/itb.png
     location: Bandung, Indonesia
     dates: Aug 2019 – Sep 2020
     highlights:
@@ -42,6 +46,7 @@ research:
 industry:
   - title: Senior Data Scientist
     org: Miral Experiences
+    logo: images/logos/miral.png
     url: https://miral.ae/miralexperiences/
     location: Abu Dhabi, UAE
     dates: Apr 2025 – Dec 2025
@@ -53,6 +58,8 @@ industry:
 
   - title: Graduate Intern
     org: LabibAI
+    logo: images/logos/labibai.png
+    url: https://labibai.ae/
     location: Abu Dhabi, UAE
     dates: May 2023 – Jun 2023
     highlights:
@@ -60,6 +67,7 @@ industry:
 
   - title: Machine Vision Engineer
     org: Freelance
+    logo: images/logos/tmmin.png
     location: Remote, Indonesia
     dates: Jul 2021 – Jul 2022
     highlights:
@@ -67,6 +75,7 @@ industry:
 
   - title: AI Engineer
     org: Neurabot
+    logo: images/logos/neurabot.png
     location: Remote, Indonesia
     dates: Feb 2021 – Apr 2022
     highlights:
@@ -74,6 +83,7 @@ industry:
 
   - title: Undergraduate Internship
     org: Toyota Motor Manufacturing Indonesia (TMMIN)
+    logo: images/logos/tmmin.png
     location: Jakarta, Indonesia
     dates: Jun 2019 – Aug 2019
     highlights:
